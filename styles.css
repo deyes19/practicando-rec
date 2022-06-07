@@ -1,0 +1,87 @@
+@import url:  ("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+  
+}
+
+body {
+  margin:0;
+  min-height: 100%;
+  font-family: Roboto;
+  font-size: 1.2rem;
+}
+.grid-container>*{
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 1.0);
+  border-radius: 4px;
+  padding: 10px;
+  display: grid;
+  gap: 10 px;
+  text-align: center;
+  grid-template-areas:
+  "navbar"
+  "header"
+  "formulario"
+
+  
+}
+.encabez{
+  width: 100%;
+  border-radius: 51px 51px 51px 51px;
+  -moz-border-radius: 51px 51px 51px 51px;
+  -webkit-border-radius: 51px 51px 51px 51px;
+  border: 0px solid #000000;
+}
+
+.header{
+  grid-area: header;
+}
+.email{
+  grid-area: email;
+}
+
+.dat1{
+  width: 600px;
+}
+.grid-container .formulario .documentos>*{
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 1.0);
+  border-radius: 4px;
+  padding: 10px;
+  display: grid;
+  gap: 10 px;
+  text-align: center;
+  width: 100%;
+  grid-template-areas: 
+  "tipo numero_doc numtel";
+
+
+}
+
+.documentos{
+  width: 100%;
+}
+
+
+.formulario{
+grid-area: formulario;
+}
+.tipo{
+  grid-area: tipo;
+  background-color: blue;
+
+}
+
+.numero_doc{
+  grid-area: numero_doc;
+  background-color: green;
+
+}
+.numtel{
+  grid-area: numtel;
+  background-color: grey;
+}
